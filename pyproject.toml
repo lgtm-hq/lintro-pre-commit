@@ -1,0 +1,14 @@
+# Shim package for the lintro-pre-commit mirror.
+#
+# It carries no code — its only purpose is to pin the published `lintro` wheel
+# so pre-commit's `language: python` hook installs lintro from PyPI instead of
+# building py-lintro from source. This mirrors astral-sh/ruff-pre-commit.
+#
+# The `lintro==X.Y.Z` pin is kept in lockstep with each py-lintro release by
+# automation in lgtm-hq/py-lintro (.github/workflows/mirror-release.yml).
+[project]
+name = "lintro-pre-commit"
+version = "0.0.0"
+dependencies = [
+    "lintro==0.69.0",
+]

@@ -10,5 +10,5 @@
 name = "lintro-pre-commit"
 version = "0.0.0"
 dependencies = [
-    "lintro==0.159.4",
+    "lintro==0.159.5",
 ]

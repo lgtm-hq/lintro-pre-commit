@@ -1,3 +1,4 @@
+---
 # Hook definitions for the pre-commit framework (https://pre-commit.com).
 #
 # These hooks install the published `lintro` wheel from PyPI into pre-commit's

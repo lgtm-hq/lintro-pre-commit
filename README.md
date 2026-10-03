@@ -6,10 +6,10 @@
 A [pre-commit](https://pre-commit.com/) hook mirror for
 [lintro](https://github.com/lgtm-hq/py-lintro).
 
-Distributed as a standalone repository so the hook installs the published
-`lintro` wheel from [PyPI](https://pypi.org/project/lintro/) instead of building
-py-lintro from source. Hook environments provision in seconds, and the hook
-`rev` is decoupled from py-lintro's library release tags — the same model
+Distributed as a standalone repository so the hook installs the published `lintro` wheel
+from [PyPI](https://pypi.org/project/lintro/) instead of building py-lintro from source.
+Hook environments provision in seconds, and the hook `rev` is decoupled from py-lintro's
+library release tags — the same model
 [astral-sh/ruff-pre-commit](https://github.com/astral-sh/ruff-pre-commit) uses.
 
 ## Usage
@@ -35,26 +35,25 @@ pre-commit run --all-files
 
 ## Available hooks
 
-| Hook ID         | Runs             | Use it for                                    |
-| --------------- | ---------------- | --------------------------------------------- |
-| `lintro-check`  | `lintro check`   | Fail the commit when quality issues are found |
-| `lintro-format` | `lintro format`  | Auto-fix formatting; re-stage and re-commit   |
+| Hook ID         | Runs            | Use it for                                    |
+| --------------- | --------------- | --------------------------------------------- |
+| `lintro-check`  | `lintro check`  | Fail the commit when quality issues are found |
+| `lintro-format` | `lintro format` | Auto-fix formatting; re-stage and re-commit   |
 
-Both hooks pass the staged filenames to lintro, so only the files you are
-committing are inspected. lintro applies each underlying tool only to the file
-types it supports, so a mixed set of staged files is fine.
+Both hooks pass the staged filenames to lintro, so only the files you are committing are
+inspected. lintro applies each underlying tool only to the file types it supports, so a
+mixed set of staged files is fine.
 
 ## Hermetic vs. full-toolchain
 
 These hooks use `language: python`: pre-commit builds an **isolated virtual
-environment** and pip-installs the pinned `lintro` wheel. That environment
-contains lintro and its Python-based tools, but **not** native, non-Python
-binaries (for example `hadolint` or `shellcheck`). lintro gracefully skips any
-tool that is not available, so those checks simply do not run under this hook.
+environment** and pip-installs the pinned `lintro` wheel. That environment contains
+lintro and its Python-based tools, but **not** native, non-Python binaries (for example
+`hadolint` or `shellcheck`). lintro gracefully skips any tool that is not available, so
+those checks simply do not run under this hook.
 
-If you rely on native tools, use py-lintro's in-repo hooks with
-`language: system`, which reuse a full lintro installation (native tools
-included) from your machine:
+If you rely on native tools, use py-lintro's in-repo hooks with `language: system`,
+which reuse a full lintro installation (native tools included) from your machine:
 
 ```yaml
 repos:
@@ -71,8 +70,8 @@ for the full comparison.
 ## Versioning
 
 The `rev:` tag matches the `lintro` version this mirror pins (see
-[`pyproject.toml`](./pyproject.toml)). New tags are published automatically on
-each py-lintro release; `pre-commit autoupdate` can bump `rev:` for you.
+[`pyproject.toml`](./pyproject.toml)). New tags are published automatically on each
+py-lintro release; `pre-commit autoupdate` can bump `rev:` for you.
 
 ## License
 

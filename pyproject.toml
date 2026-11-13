@@ -9,4 +9,4 @@
 [project]
 name = "lintro-pre-commit"
 version = "0.0.0"
-dependencies = ["lintro==0.180.16"]
+dependencies = ["lintro==0.180.17"]

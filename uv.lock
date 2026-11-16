@@ -116,7 +116,7 @@ wheels = [
 
 [[package]]
 name = "lintro"
-version = "0.178.1"
+version = "0.180.34"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -132,9 +132,9 @@ dependencies = [
     { name = "tabulate" },
     { name = "watchdog" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/db/e1/2e988ba02e262c2ce85cc49fe157929a84d949194a5db7106456cd6b34eb/lintro-0.178.1.tar.gz", hash = "sha256:e55283c5dccfbba92d355ef8f8cec044d2948a35c4662473888b4293a56e9574", size = 3166377, upload-time = "2026-11-05T21:02:53.06Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0d/e3/414ec892ad5ca345aebe5dbcbae95f0d95931f48ef5168a09ffda22a6063/lintro-0.180.34.tar.gz", hash = "sha256:5a5ba660c31adbc2f469a5e2899111543636c19fdc4e27994f47892583bb538d", size = 3328831, upload-time = "2026-11-14T18:24:32.078Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7a/f7/2adad3477d84df60e8d6f3cd34431cc087f464f79b3844c84a80872e72f1/lintro-0.178.1-py3-none-any.whl", hash = "sha256:a61829f8749f972c80afb3c99da8fada3afb7d5798b5f9114edcf39da2aff407", size = 2173772, upload-time = "2026-11-05T21:02:50.446Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/2a/9f5f981a50bd6e9490313edea1192ccbff6f4154657cdd8c6f5bbe227c7d/lintro-0.180.34-py3-none-any.whl", hash = "sha256:9356f5bd66f85cf6eb1fe3a90b24ca865bd2f45668553ea3bc16df3ed2a84cd1", size = 2328008, upload-time = "2026-11-14T18:24:29.919Z" },
 ]
 
 [[package]]
@@ -146,31 +146,31 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "lintro", specifier = "==0.178.1" }]
+requires-dist = [{ name = "lintro", specifier = "==0.180.34" }]
 
 [[package]]
 name = "loguru"
-version = "0.7.3"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
     { name = "win32-setctime", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3a/05/a1dae3dffd1116099471c643b8924f5aa6524411dc6c63fdae648c4f1aca/loguru-0.7.3.tar.gz", hash = "sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6", size = 63559, upload-time = "2024-12-06T11:20:56.608Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/61/ce/b5bb93d4d9fc7a067f69140b3bb3782f6ad6360bc76e99b6e3d386cb1320/loguru-0.8.0.tar.gz", hash = "sha256:fb3e4623288e37700a0577f6e0ce776cc1860b5d95c657d67f07a2476b304867", size = 71232, upload-time = "2026-11-11T18:50:26.248Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c", size = 61595, upload-time = "2024-12-06T11:20:54.538Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/00/9ee7c8da7342b1a5524bca9d036f89e7d1d1e5a6345c9623763eeeac941f/loguru-0.8.0-py3-none-any.whl", hash = "sha256:e0fba09d6f76ba2d2f4bd1757122942f5a670c702e988b5efaeab99dacba0069", size = 69409, upload-time = "2026-11-11T18:50:24.148Z" },
 ]
 
 [[package]]
 name = "markdown-it-py"
-version = "4.2.0"
+version = "4.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mdurl" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz", hash = "sha256:04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49", size = 82454, upload-time = "2026-05-07T12:08:28.36Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/16/fc/cee2c45553c9a9bf77d8b0c391560c556d7ed756b1f0bb35eb5d48db09ea/markdown_it_py-4.3.0.tar.gz", hash = "sha256:91a58fa5b72c71a40cf7177250fd767480d7a2bb3ac426ccfb76fb90305fdaaa", size = 242701, upload-time = "2026-11-10T16:18:30.467Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl", hash = "sha256:9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a", size = 91687, upload-time = "2026-05-07T12:08:27.182Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/31/5f0ac2f1a1c67423c995c731a11cd4ad05d081a2be969d74f868bdb9cc70/markdown_it_py-4.3.0-py3-none-any.whl", hash = "sha256:7aa1511a46c39138de78d9eba92ce47e63124d8003fc98b3a351909e04239efa", size = 96951, upload-time = "2026-11-10T16:18:28.975Z" },
 ]
 
 [[package]]
